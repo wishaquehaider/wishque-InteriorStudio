@@ -55,6 +55,7 @@ function AboutHero() {
                 <div className={style.firstImage}>
                     <div >
                         <Image
+                            alt='aboutFirstImage'
                             className={style.image}
                             src={'/aboutSection/about.jpg'}
                             fill={true}
@@ -71,6 +72,7 @@ function AboutHero() {
                 <div className={style.secondImage}>
                     <div>
                     <Image
+                    alt='aboutSecondImage'
                         src={'/aboutSection/abountSecond.jpg'}
                         fill={true}
                     />

@@ -185,9 +185,9 @@ function AboutData() {
                     <h2 className={style.mainHeading}>Awards</h2>
                     <div>
                         {
-                            data.map(item => {
+                            data.map((item,i) => {
                                 return <>
-                                    <p className={style.paragraphs}>{item.history}</p>
+                                    <p key={i} className={style.paragraphs}>{item.history}</p>
                                 </>
                             })
                         }
@@ -199,9 +199,9 @@ function AboutData() {
                     <h2 className={style.mainHeading}>Press</h2>
                     <div>
                         {
-                            Press.map(item => {
+                            Press.map((item,i) => {
                                 return <>
-                                    <p className={style.paragraphs}>{item.data}</p>
+                                    <p key={i} className={style.paragraphs}>{item.data}</p>
                                 </>
                             })
                         }

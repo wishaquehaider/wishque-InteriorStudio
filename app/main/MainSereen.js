@@ -93,20 +93,20 @@ function MainScreen() {
 
         <div className={style.imageFirstPortion}>
        <div onMouseEnter={mouseEnterMainFisrt} onMouseLeave={mouseOutMainFisrt} className={ hover ? style.mainImageOneHover : style.mainImageOne} >
-            <Image className={style.myImage} src={'/homeScreen/homeFirst.jpg'}             
+            <Image alt='homeFirstImage' className={style.myImage} src={'/homeScreen/homeFirst.jpg'}             
               fill={true}
             />
           </div>
 
           <div className={style.bothImages}>
             <div onMouseEnter={mouseEnterMainSec} onMouseLeave={mouseLeaveMainSec} className={ secondHover ?  style.mainImageTwoHover : style.mainImageTwo}>
-              <Image className={style.myImage} src={'/homeScreen/homeSecond.jpg'}
+              <Image  alt='homeSecondImage' className={style.myImage} src={'/homeScreen/homeSecond.jpg'}
                 fill={true}
               />
             </div>
 
             <div onMouseEnter={mouseEnterThird} onMouseLeave={mouseLeaveThird} className={thirdHover ? style.homeImageThreeHover : style.homeImageThree} >
-              <Image className={style.myImage} src={'/homeScreen/homeThird.jpg'}
+              <Image  alt='homeThirdImage' className={style.myImage} src={'/homeScreen/homeThird.jpg'}
                 fill={true}
               />
             </div>
@@ -116,20 +116,20 @@ function MainScreen() {
         <div className={style.imageSecondPortion}>
           <div className={style.bothImages}>
             <div onMouseEnter={mouseEnterFouth} onMouseLeave={mouseLeaveFouth} className={ forthHover ? style.mainImageFourthHover : style.mainImageFourth}>
-              <Image className={style.myImage} src={'/homeScreen/homeFourth.jpg'}
+              <Image  alt='homeFourthImage' className={style.myImage} src={'/homeScreen/homeFourth.jpg'}
                 fill={true}
               />
             </div>
 
             <div onMouseEnter={mouseEnterfifth} onMouseLeave={mouseLeavefifth} className={ fifthHover ? style.homeImageFifthHover : style.homeImageFifth}>
-              <Image className={style.myImage} src={'/homeScreen/homeFifth.jpg'}
+              <Image  alt='homeFifthImage' className={style.myImage} src={'/homeScreen/homeFifth.jpg'}
                 fill={true}
               />
             </div>
           </div>
 
           <div onMouseEnter={mouseEnterSixth} onMouseLeave={mouseLeaveSixth} className={ sixthHover ? style.mainImageSixthHover : style.mainImageSixth} >
-            <Image className={style.myImage} src={'/homeScreen/homeSixth.jpg'}
+            <Image  alt='homeSixthImage' className={style.myImage} src={'/homeScreen/homeSixth.jpg'}
               fill={true}
             />
           </div>

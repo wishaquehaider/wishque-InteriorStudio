@@ -86,10 +86,10 @@ const Page = async ({ params }) => {
                     {
                       (index)%3 !==0 ? <div className={style.imageParentSlug}>
 
-                      <Image src={'https:'+item} fill={true} /> 
+                      <Image alt={item} key={index} src={'https:'+item} fill={true} /> 
 
                        </div> : <div className={style.imageParentSecondSlug}>
-                       <Image src={'https:'+item} fill={true} />
+                       <Image alt={item} key={index} src={'https:'+item} fill={true} />
                        </div>
 
                     }
