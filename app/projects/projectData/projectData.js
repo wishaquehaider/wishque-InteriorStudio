@@ -150,7 +150,7 @@ const ProjectData = ({ response }) => {
               <>
               <Link href={`projects/${route}`}>
             <div className={style.mobileImgParent}>
-              <Image src={'https:'+ item.images} fill={true} />
+              <Image alt={item.images} src={'https:'+ item.images} fill={true} />
             </div>
               <p>{item.content}</p>
               </Link>  

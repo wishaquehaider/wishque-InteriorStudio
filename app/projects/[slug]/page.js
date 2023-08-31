@@ -47,30 +47,30 @@ const Page = async ({ params }) => {
   return (
     <div className={style.mainParentSlug}>
       {
-        response.items.map(item => {
+        response.items.map((item,index) => {
           // console.log('item', item);
           return <div>
 
-            <div className={style.contentSection}>
-              <h1 className={style.mainHeadingNested}>{item.fields.title}</h1>
-              <div className={style.mainContentNested}>
-                <div className={style.headingParent}>
-                  <div>
-                    <h2 className={style.nestedSmallHeading}>Type</h2>
-                    <p className={style.nestedSmallText}>{item.fields.type}</p>
+            <div key={index} className={style.contentSection}>
+              <h1 key={index} className={style.mainHeadingNested}>{item.fields.title}</h1>
+              <div key={index} className={style.mainContentNested}>
+                <div key={index} className={style.headingParent}>
+                  <div key={index}>
+                    <h2 key={index} className={style.nestedSmallHeading}>Type</h2>
+                    <p key={index} className={style.nestedSmallText}>{item.fields.type}</p>
                   </div>
-                  <div>
-                    <h2 className={style.nestedSmallHeading}>Location</h2>
-                    <p className={style.nestedSmallText}>{item.fields.location}</p>
+                  <div key={index}>
+                    <h2 key={index} className={style.nestedSmallHeading}>Location</h2>
+                    <p key={index} className={style.nestedSmallText}>{item.fields.location}</p>
                   </div>
-                  <div>
-                    <h2 className={style.nestedSmallHeading}>Year</h2>
-                    <p className={style.nestedSmallText}>{item.fields.year}</p>
+                  <div key={index}>
+                    <h2 key={index} className={style.nestedSmallHeading}>Year</h2>
+                    <p key={index} className={style.nestedSmallText}>{item.fields.year}</p>
                   </div>
                 </div>
 
-                <div>
-                  <p className={style.paragraphNested}>{item.fields.description}</p>
+                <div key={index}>
+                  <p key={index} className={style.paragraphNested}>{item.fields.description}</p>
                 </div>
 
             
