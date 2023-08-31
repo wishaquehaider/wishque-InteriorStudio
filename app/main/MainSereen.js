@@ -82,11 +82,11 @@ function MainScreen() {
   return (
     <div className={style.mainParent}>
       <div className={style.homeContentParent}>
-        <h2 className={style.headingContent}>mason studio</h2>
+        <h2 className={style.headingContent}>Appears Interior studio</h2>
         <div>
         <p className={style.contentParagraph}>{text}</p>
         </div>
-        <p className={style.lastContent}>©2023 Mason Studio Inc</p>
+        <p className={style.lastContent}>©2023 Appears Interior studio Inc</p>
       </div>
 
       <div className={style.imagesSection}> 

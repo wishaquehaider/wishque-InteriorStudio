@@ -28,7 +28,7 @@ function Navbar() {
                 <div className={navStyle ? style.parentContent : style.parentContentNone}>
                     <Link href={'/'}> <h2 onClick={function () {
                         setNavStyle(false)
-                    }} className={style.navItemMain}>mason studio</h2> </Link>
+                    }} className={style.navItemMain}>Appears Interior studio</h2> </Link>
                     <div className={style.hrTag}></div>
                     <Link href={'/projects'}> <h2 onClick={onClickLinks} className={style.navItem}>Projects</h2> </Link>
                     <div className={style.hrTag}></div>
