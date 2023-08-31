@@ -1,0 +1,217 @@
+.navImage {
+    cursor: pointer;
+    margin: 25px 25px 0 25px;
+}
+
+.navImageNone {
+    display: none;
+}
+
+.navImageCross {
+    cursor: pointer;
+    margin: 25px 25px 0 25px;    
+
+}
+
+.navImageCrossNone {
+    display: none;
+}
+
+.main {
+    position: absolute;
+    background-color: rgb(255, 208, 208);
+    width: 100%;
+    height: 100vh;
+    transition: ease-in-out;
+    transition: 0.4s;
+    z-index: 2;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.mainNone {
+    position: absolute;
+    /* background-color: pink; */
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out;
+    transition: 0.4s;
+}
+
+.hrTag {
+    background-color: white;
+    height: 1px;
+    width: 100%;
+}
+
+.parentContent {
+    padding: 100px 70px 100px 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.parentContentNone {
+    display: none;
+}
+
+.navItemMain {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navItem{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    opacity: 0.40;
+    cursor: pointer;
+}
+
+.navItem:hover {
+    opacity: 100;
+    transition: ease-in-out 0.4s;
+}
+
+.footerParagraph {
+    max-width: 130px;
+    text-align: center;
+}
+
+.footerInfo {
+    display: flex;
+    column-gap: 60px;
+    font-size: 12px;
+}
+
+.paragraphFooter {
+    font-size: 12px;
+}
+
+.footer {
+    display:flex ;
+    justify-content: space-between;
+    /* max-width: 90%; */
+    width: 90%;
+    /* margin:0  auto 80px auto; */
+    padding: 40px 20px 20px 0px;
+    border-top: 1px solid white;
+    margin-right: 100px;
+    
+}
+
+.footerNone {
+    display: none;
+}
+
+.navContentFlex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .navImage {
+        cursor: pointer;
+        /* margin: 25px 0px 0 25px; */
+        position: absolute; 
+        right: -10px;
+        /* width: 100%; */
+        /* background-color: rgb(0, 47, 255); */
+        margin-left: 190px;
+    }
+
+    .main {
+    position: absolute;
+    background-color: rgb(255, 208, 208);
+    width: 100%;
+    height: 100vh;
+    transition: ease-in-out;
+    transition: 0.4s;
+    z-index: 2;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.parentContent {
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.navItemMain {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.parentContent {
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+.main {
+    position: absolute;
+    background-color: rgb(255, 208, 208);
+    width: 100%;
+    height: 100vh;
+    transition: ease-in-out;
+    transition: 0.4s;
+    z-index: 2;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.navContentFlex {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.parentContent {
+    padding: 100px 40px 100px 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footerInfo {
+    display: flex;
+    column-gap: 10px;
+    font-size: 12px;
+}
+
+.navImageCross {
+    cursor: pointer;
+    margin: 25px 20px 0 20px;   
+    /* display: none;  */
+}
+
+.footer {
+    display:flex ;
+    justify-content: space-between;
+    /* max-width: 90%; */
+    width: 90%;
+    /* margin:0  auto 80px auto; */
+    padding: 40px 20px 20px 0px;
+    border-top: 1px solid white;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+}
