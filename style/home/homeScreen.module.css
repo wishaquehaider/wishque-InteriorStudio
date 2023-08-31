@@ -1,34 +1,36 @@
 .bothImages {
     width: 30%;
-}  
+}
 
 .mainImageOne {
     width: 67%;
     height: 92%;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 10px 20px 0px;
     position:relative;
     filter: grayscale(100%);
     opacity: 0.70;
     cursor: pointer;
-    object-fit: cover;
+    box-sizing: border-box;
+    /* object-fit: cover; */
 }
 
 .mainImageOneHover {
-    width: 66%;
+    width: 67%;
     height: 92%;
-    margin: 20px 0px 20px 0;
+    margin: 20px 10px 20px 0;
     position:relative;
     filter: grayscale(0);
     opacity: 100;
     cursor: pointer;
     transition: ease-in-out;
     transition: 0.4s;
+    box-sizing: border-box;
 }
 
 .mainImageTwo {
     width: 93%;
     height: 43%;
-    margin: 20px 0px 20px 20px;
+    margin: 20px 0px 20px 0px;
     /* margin: 20px 0px 20x 20px ; */
     /* padding: 7px; */
     /* margin: 20px 40px 10px 10px; */
@@ -40,7 +42,7 @@
 .mainImageTwoHover {
     width: 93%;
     height: 43%;
-    margin: 20px 0px 20px 20px;
+    margin: 20px 0px 20px 0px;
     /* padding: 7px; */
     /* margin: 20px 20px 10px 10px; */
     position:relative;
@@ -54,9 +56,6 @@
 .homeImageThree {
     width: 93%;
     height: 43%;
-    margin-left: 20px;
-    /* padding: 7px; */
-    /* margin: 10px 20px 10px 10px; */
     position:relative;
     filter: grayscale(100%);
     opacity: 0.70;
@@ -65,7 +64,7 @@
 .homeImageThreeHover {
     width: 93%;
     height: 43%;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 10px;
     /* padding: 7px; */
     /* margin: 10px 20px 10px 10px; */
@@ -204,21 +203,19 @@
     width: 50%;
     height: 100vh;
 }
-
+/* 
 @media screen and (max-width: 1730px) {
     .mainImageOne {
-        width: 66%;
+        width: 67%;
         height: 92%;
         margin: 20px 0px 20px 0;
-        /* margin: 20px 10px 10px 0 ; */
-        /* padding: 10px; */
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
         cursor: pointer;
         object-fit: cover;
     }
-}
+} */
 
 /* 
 @media screen and (max-width: 1260px) {
@@ -382,7 +379,7 @@
     }
 
     .mainImageOne {
-        width: 65%;
+        width: 67%;
         height: 92%;
         margin: 20px 0px 20px 0;
         /* margin: 20px 10px 10px 0 ; */
