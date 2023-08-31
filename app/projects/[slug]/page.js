@@ -84,11 +84,11 @@ const Page = async ({ params }) => {
 
                     return <>
                     {
-                      (index)%3 !==0 ? <div className={style.imageParentSlug}>
+                      (index)%3 !==0 ? <div key={index} className={style.imageParentSlug}>
 
                       <Image alt={item} key={index} src={'https:'+item} fill={true} /> 
 
-                       </div> : <div className={style.imageParentSecondSlug}>
+                       </div> : <div key={index} className={style.imageParentSecondSlug}>
                        <Image alt={item} key={index} src={'https:'+item} fill={true} />
                        </div>
 

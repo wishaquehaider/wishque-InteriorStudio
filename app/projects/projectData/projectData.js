@@ -125,7 +125,7 @@ const ProjectData = ({ response }) => {
               <Link href={`projects/${i}`}>
 
               <div id={`${i}`} className={imageStyle ? style.imageParentScroll : style.imgParent}>
-                <Image className={style.myImg} src={'https:' + item.file.url} fill={true} />
+                <Image alt={item.file.url} className={style.myImg} src={'https:' + item.file.url} fill={true} />
               </div>
 
               </Link>
