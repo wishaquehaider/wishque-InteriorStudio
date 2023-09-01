@@ -1,6 +1,7 @@
 .navImage {
     cursor: pointer;
     margin: 25px 25px 0 25px;
+    position: fixed;
 }
 
 .navImageNone {
@@ -10,7 +11,6 @@
 .navImageCross {
     cursor: pointer;
     margin: 25px 25px 0 25px;    
-
 }
 
 .navImageCrossNone {
@@ -26,6 +26,7 @@
     transition: 0.4s;
     z-index: 2;
     display: flex;
+    
     /* flex-direction: column; */
 }
 
@@ -45,7 +46,7 @@
 }
 
 .parentContent {
-    padding: 100px 70px 100px 0px;
+    /* padding: 100px 70px 100px 0px; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -95,13 +96,9 @@
 .footer {
     display:flex ;
     justify-content: space-between;
-    /* max-width: 90%; */
-    width: 95%;
-    /* margin:0  auto 80px auto; */
-    padding: 40px 20px 20px 0px;
+    width: 100%;
+    /* padding: 40px 20px 20px 0px; */
     border-top: 1px solid white;
-    /* margin-right: 100px; */
-    
 }
 
 .footerNone {
@@ -112,16 +109,17 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 100px 75px 40px 0px;
 }
 
 @media screen and (max-width: 767px) {
+       
+  
+
     .navImage {
         cursor: pointer;
-        /* margin: 25px 0px 0 25px; */
         position: absolute; 
         right: -10px;
-        /* width: 100%; */
-        /* background-color: rgb(0, 47, 255); */
         margin-left: 190px;
     }
 
@@ -138,7 +136,7 @@
 }
 
 .parentContent {
-    padding: 100px 0px 100px 0px;
+    /* padding: 100px 0px 100px 0px; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -164,7 +162,7 @@
 
 
 .main {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -175,17 +173,17 @@
     transition: ease-in-out 0.4s;
     z-index: 2;
     display: flex;
-    /* flex-direction: column; */
 }
 
 .navContentFlex {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
+    padding: 0px 65px 40px 0px;
 }
 
 .parentContent {
-    padding: 100px 40px 100px 0px;
+    padding: 100px 0px 100px 0px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -208,14 +206,19 @@
 .footer {
     display:flex ;
     justify-content: space-between;
-    /* max-width: 90%; */
-    width: 90%;
-    /* margin:0  auto 80px auto; */
+    width: 100%;
     padding: 40px 20px 20px 0px;
     border-top: 1px solid white;
     margin-right: 100px;
     margin-bottom: 50px;
 }
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 12px;
+  }
 
 }
 
@@ -230,6 +233,37 @@
         z-index: 2;
         display: flex;
         /* flex-direction: column; */
+    }
+
+    .footerInfo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+        column-gap: 20px;
+        row-gap: 10px;
+        font-size: 12px;
+        text-align: center;
+        border-top: 1px solid white;
+        padding-top: 10px;
+      }
+
+      .footer {
+        display:flex ;
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 40px 0px 20px 0px;
+        border-top: none;
+    }
+
+    .paragraphFooter {
+        border-top: 1px solid white;
+        margin-top: 0;
+        font-size: 12px;
+        padding-top: 10px;
     }
 }
 

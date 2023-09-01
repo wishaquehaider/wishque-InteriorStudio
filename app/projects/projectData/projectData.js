@@ -121,8 +121,10 @@ const ProjectData = ({ response }) => {
 
         {
           anss.map((item, i) => {
+            console.log('heavy',item);
+            let route = item.title.replaceAll(' ', '-').toLowerCase();
             return <>
-              <Link href={`projects/${i}`}>
+              <Link href={`projects/${route}`}>
 
               <div id={`${i}`} className={imageStyle ? style.imageParentScroll : style.imgParent}>
                 <Image alt={item.file.url} className={style.myImg} src={'https:' + item.file.url} fill={true} />
@@ -141,7 +143,7 @@ const ProjectData = ({ response }) => {
     <div>
 
       <div className={style.parentMobile}>
-        <h1>Projects</h1>
+        <h1 className={style.headingContent}>Projects</h1>
         {
           newArray.map(item => {
             let route = item.content.replaceAll(' ', '-').toLowerCase();

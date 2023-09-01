@@ -22,6 +22,7 @@ function Navbar() {
             <RxCross1 onClick={function () {
                 setNavStyle(false)
             }} className={navStyle ? style.navImageCross : style.navImageCrossNone} fontSize={25} />
+   
 
             <div className={style.navContentFlex}>
 
