@@ -1,18 +1,20 @@
 .bothImages {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
     width: 30%;
     height: 100%;
 }
 
 .mainImageOne {
-    width: 65%;
-    height: 450px;
+    width: 70%;
+    height:100%;
     position:relative;
     filter: grayscale(100%);
     opacity: 0.70;
     cursor: pointer;
     box-sizing: border-box;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .mainImageOneHover {
@@ -25,16 +27,17 @@
     transition: ease-in-out;
     transition: 0.4s;
     box-sizing: border-box;
+    margin-right: 10px;
+
 }
 
 .mainImageTwo {
     width: 100%;
-    height: 205px;
+    height:50%;
     position:relative;
     filter: grayscale(100%);
     opacity: 0.70;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .mainImageTwoHover {
@@ -50,15 +53,16 @@
 
 .homeImageThree {
     width: 100%;
-    height: 225px;
+    height: 50%;
     position:relative;
     filter: grayscale(100%);
     opacity: 0.70;
+    box-sizing: border-box;
 }
 
 .homeImageThreeHover {
-    width: 90%;
-    height: 40%;
+    width: 100%;
+    height: 50%;
     position:relative;
     filter: grayscale(0);
     opacity: 100;
@@ -69,17 +73,15 @@
 
 .mainImageFourth {
     width: 100%;
-    height: 205px;
+    height: 50%;
     position:relative;
     filter: grayscale(100%);
     opacity: 0.70;
-    margin-bottom: 20px;
 }
 
 .mainImageFourthHover { 
-    width: 95%;
-    height: 43%;
-
+    width: 100%;
+    height: 50%;
     position:relative;
     filter: grayscale(0);
     opacity: 100;
@@ -90,43 +92,44 @@
 
 .homeImageFifth {
     width: 100%;
-    height: 225px;
+    height: 50%;
     position:relative;
     filter: grayscale(100%);
     opacity: 0.70;
 }
 
 .homeImageFifthHover {
-    width: 95%;
-    height: 43%;
+    width: 100%;
+    height: 50%;
     position:relative;
     filter: grayscale(0);
     opacity: 100;
     cursor: pointer;
     transition: ease-in-out;
-    transition: 0.4s;
+    transition: 0.4s
 }
 
 .mainImageSixth {
-    width: 65%;
-    height: 450px;
+    width: 70%;
+    height: 100%;
     position:relative;
     filter: grayscale(100%);
     opacity: 0.70;
-    margin-left: 20px;
-
+    margin-left: 10px;
 
 }
 
 .mainImageSixthHover {
-    width: 67%;
-    height: 92%;
+    width: 70%;
+    height: 100%;
     position:relative;
     filter: grayscale(0%);
     opacity: 100;
     cursor: pointer;
     transition: ease-in-out;
-    transition: 0.4s
+    transition: 0.4s;
+    margin-left: 10px;
+
 }
 
 .mainParent {
@@ -161,11 +164,14 @@
 .imageFirstPortion {
     display: flex;
     height: 50%;
+    margin: 10px;
+    row-gap: 10px;
 }
 
 .imageSecondPortion {
     display: flex;
     height: 50%;
+    margin: 0px 10px 10px 10px;
 }
 
 .headingContent {
@@ -186,268 +192,6 @@
     margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1610px) {
-    
-.mainImageOne {
-    width: 65%;
-    height: 400px;
-    position:relative;
-    filter: grayscale(100%);
-    opacity: 0.70;
-    cursor: pointer;
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
-.mainImageOneHover {
-    width: 70%;
-    height: 100%;
-    position:relative;
-    filter: grayscale(0);
-    opacity: 100;
-    cursor: pointer;
-    transition: ease-in-out;
-    transition: 0.4s;
-    box-sizing: border-box;
-}
-
-.mainImageTwo {
-    width: 100%;
-    height: 180px;
-    position:relative;
-    filter: grayscale(100%);
-    opacity: 0.70;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.mainImageTwoHover {
-    width: 100%;
-    height: 50%;
-    position:relative;
-    filter: grayscale(0);
-    opacity: 100;
-    cursor: pointer;
-    transition: ease-in-out;
-    transition: 0.4s
-}
-
-.homeImageThree {
-    width: 100%;
-    height: 200px;
-    position:relative;
-    filter: grayscale(100%);
-    opacity: 0.70;
-}
-
-.homeImageThreeHover {
-    width: 90%;
-    height: 40%;
-    position:relative;
-    filter: grayscale(0);
-    opacity: 100;
-    cursor: pointer;
-    transition: ease-in-out;
-    transition: 0.4s
-}
-
-.mainImageFourth {
-    width: 100%;
-    height: 180px;
-    position:relative;
-    filter: grayscale(100%);
-    opacity: 0.70;
-    margin-bottom: 20px;
-}
-
-.mainImageFourthHover { 
-    width: 95%;
-    height: 43%;
-
-    position:relative;
-    filter: grayscale(0);
-    opacity: 100;
-    cursor: pointer;
-    transition: ease-in-out;
-    transition: 0.4s
-}
-
-.homeImageFifth {
-    width: 100%;
-    height: 200px;
-    position:relative;
-    filter: grayscale(100%);
-    opacity: 0.70;
-}
-
-.homeImageFifthHover {
-    width: 95%;
-    height: 43%;
-    position:relative;
-    filter: grayscale(0);
-    opacity: 100;
-    cursor: pointer;
-    transition: ease-in-out;
-    transition: 0.4s;
-}
-
-.mainImageSixth {
-    width: 65%;
-    height: 400px;
-    position:relative;
-    filter: grayscale(100%);
-    opacity: 0.70;
-    margin-left: 20px;
-
-
-}
-
-.mainImageSixthHover {
-    width: 67%;
-    height: 92%;
-    position:relative;
-    filter: grayscale(0%);
-    opacity: 100;
-    cursor: pointer;
-    transition: ease-in-out;
-    transition: 0.4s
-}
-}
-
-
-@media screen and (max-width: 1410px) {
-    
-    .mainImageOne {
-        width: 67%;
-        height: 290px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-        cursor: pointer;
-        box-sizing: border-box;
-        margin-top: 10px;
-        margin-right: 10px;
-    }
-    
-    .mainImageOneHover {
-        width: 70%;
-        height: 100%;
-        position:relative;
-        filter: grayscale(0);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s;
-        box-sizing: border-box;
-    }
-    
-    .mainImageTwo {
-        width: 100%;
-        height: 130px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .mainImageTwoHover {
-        width: 100%;
-        height: 50%;
-        position:relative;
-        filter: grayscale(0);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s
-    }
-    
-    .homeImageThree {
-        width: 100%;
-        height: 150px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-    }
-    
-    .homeImageThreeHover {
-        width: 90%;
-        height: 40%;
-        position:relative;
-        filter: grayscale(0);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s
-    }
-    
-    .mainImageFourth {
-        width: 100%;
-        height: 130px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-        margin-bottom: 10px;
-    }
-    
-    .mainImageFourthHover { 
-        width: 95%;
-        height: 43%;
-    
-        position:relative;
-        filter: grayscale(0);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s
-    }
-    
-    .homeImageFifth {
-        width: 100%;
-        height: 150px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-    }
-    
-    .homeImageFifthHover {
-        width: 95%;
-        height: 43%;
-        position:relative;
-        filter: grayscale(0);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s;
-    }
-    
-    .mainImageSixth {
-        width: 67%;
-        height: 290px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-        margin-left: 10px;
-    
-    
-    }
-    
-    .mainImageSixthHover {
-        width: 67%;
-        height: 92%;
-        position:relative;
-        filter: grayscale(0%);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s
-    }
-    }
-
-
-
-
 @media screen and (max-width: 1260px) {
     .contentParagraph {
         max-width: 410px;
@@ -456,142 +200,7 @@
         padding-right: 30px;
     }
 
-    .mainImageOne {
-        width: 67%;
-        height: 92%;
-        margin: 20px 0px 20px 0;
-        /* margin: 20px 10px 10px 0 ; */
-        /* padding: 10px; */
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-        cursor: pointer;
-        object-fit: cover;
-    }
-
-    .mainImageOne {
-        width: 65%;
-        height: 300px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-        cursor: pointer;
-        box-sizing: border-box;
-        margin-top: 20px;
-        margin-right: 20px;
-    }
-    
-    .mainImageOneHover {
-        width: 70%;
-        height: 100%;
-        position:relative;
-        filter: grayscale(0);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s;
-        box-sizing: border-box;
-    }
-    
-    .mainImageTwo {
-        width: 100%;
-        height: 130px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .mainImageTwoHover {
-        width: 100%;
-        height: 50%;
-        position:relative;
-        filter: grayscale(0);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s
-    }
-    
-    .homeImageThree {
-        width: 100%;
-        height: 150px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-    }
-    
-    .homeImageThreeHover {
-        width: 90%;
-        height: 40%;
-        position:relative;
-        filter: grayscale(0);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s
-    }
-    
-    .mainImageFourth {
-        width: 100%;
-        height: 130px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-        margin-bottom: 20px;
-    }
-    
-    .mainImageFourthHover { 
-        width: 95%;
-        height: 43%;
-    
-        position:relative;
-        filter: grayscale(0);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s
-    }
-    
-    .homeImageFifth {
-        width: 100%;
-        height: 150px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-    }
-    
-    .homeImageFifthHover {
-        width: 95%;
-        height: 43%;
-        position:relative;
-        filter: grayscale(0);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s;
-    }
-    
-    .mainImageSixth {
-        width: 65%;
-        height: 300px;
-        position:relative;
-        filter: grayscale(100%);
-        opacity: 0.70;
-        margin-left: 20px;
-    }
-    
-    .mainImageSixthHover {
-        width: 67%;
-        height: 92%;
-        position:relative;
-        filter: grayscale(0%);
-        opacity: 100;
-        cursor: pointer;
-        transition: ease-in-out;
-        transition: 0.4s
-    }
+   
 }
 
 @media screen and (max-width: 1160px) {
@@ -620,13 +229,13 @@
 
     .homeContentParent {
         width: 100%;
-        height: auto;
+        height: 30%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 400px 0px 40px 100px;
+        padding: 100px 0px 40px 100px;
         box-sizing: border-box; 
-        row-gap: 40px;
+        row-gap: 10px;
         /* background-color: red; */
     }
 
@@ -640,30 +249,28 @@
     .imagesSection {
         z-index: 1;
         width: 100%;
-        /* height: 70vh; */
-
+        height: 70%;
+        height: 70vh;
     }
 
     .imageFirstPortion {
         display: flex;
         width: 100%;
-        padding: 0 100px;
+        padding: 0 90px;
         /* padding-right: 100px; */
     }
 
     .imageSecondPortion {
         display: flex;
         width: 100%;
-        padding: 0 100px;
+        padding: 0 90px;
     }
 
 
 
     .mainImageOne {
         width: 70%;
-        height: 300px;
-        margin: 20px 10px 10px 0 ;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -673,9 +280,7 @@
 
     .mainImageOneHover {
         width: 70%;
-        height: 300px;
-        margin: 20px 10px 10px 0 ;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -686,9 +291,7 @@
     
     .mainImageTwo {
         width: 100%;
-        height: 145px;
-        /* padding: 7px; */
-        margin: 20px 20px 10px 0px;
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -698,9 +301,7 @@
 
     .mainImageTwoHover {
         width: 100%;
-        height: 145px;
-        /* padding: 7px; */
-        margin: 20px 20px 10px 0px;
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -711,9 +312,7 @@
     
     .homeImageThree {
         width: 100%;
-        height: 145px;
-        /* padding: 7px; */
-        margin: 10px 20px 10px 0px;
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -722,9 +321,7 @@
 
     .homeImageThreeHover {
         width: 100%;
-        height: 145px;
-        /* padding: 7px; */
-        margin: 10px 20px 10px 0px;
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -736,9 +333,7 @@
     
     .mainImageFourth {
         width: 100%;
-        height: 145px;
-        /* padding: 7px; */
-        margin:0px 20px 10px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -746,9 +341,7 @@
 
     .mainImageFourthHover { 
         width: 100%;
-        height: 145px;
-        /* padding: 7px; */
-        margin: 0px 20px 10px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -760,9 +353,7 @@
     
     .homeImageFifth {
         width: 100%;
-        height: 145px;
-        /* padding: 7px; */
-        margin:0px 20px 20px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -770,9 +361,7 @@
 
     .homeImageFifthHover {
         width: 100%;
-        height: 145px;
-        /* padding: 7px; */
-        margin: 0px 20px 20px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -783,9 +372,7 @@
     
     .mainImageSixth {
         width: 70%;
-        height: 300px;
-        margin: 0px 0px 20px 10px;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -793,9 +380,7 @@
 
     .mainImageSixthHover {
         width: 70%;
-        height: 300px;
-        margin: 0px 0px 20px 10px;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(0%);
         opacity: 100;
@@ -831,14 +416,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 300px 0px 40px 30px;
+        padding: 100px 0px 40px 30px;
         box-sizing: border-box; 
     }
 
     .contentParagraph {
         /* max-width:370px; */
         width: 100%;
-        margin-top: 20px    ;
+        margin-top: 20px ;
         font-size: 25px;
         transition:  all 500ms ease-in-out;
     }
@@ -846,41 +431,34 @@
         z-index: 1;
         width: 100%;
         /* height: 70vh;     */
-
     }
 
     .imageFirstPortion {
         display: flex;
         width: 100%;
-        padding: 0 30px;
-        /* padding-right: 100px; */
+        padding: 0 20px;
     }
 
     .imageSecondPortion {
         display: flex;
         width: 100%;
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
 
 
     .mainImageOne {
         width: 70%;
-        height: 220px;
-        margin: 20px 10px 10px 0 ;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
         cursor: pointer;
-        /* object-fit: cover; */
     }
 
     .mainImageOneHover {
         width: 70%;
-        height: 220px;
-        margin: 20px 10px 10px 0 ;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -892,9 +470,7 @@
     
     .mainImageTwo {
         width: 100%;
-        height: 105px;
-        /* padding: 7px; */
-        /* margin: 20px 20px 10px 10px; */
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -903,9 +479,7 @@
 
     .mainImageTwoHover {
         width: 100%;
-        height: 105px;
-        /* padding: 7px; */
-        /* margin: 20px 20px 10px 10px; */
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -916,9 +490,7 @@
     
     .homeImageThree {
         width: 100%;
-        height: 105px;
-        /* padding: 7px; */
-        /* margin: 10px 20px 10px 10px; */
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -926,9 +498,7 @@
 
     .homeImageThreeHover {
         width: 100%;
-        height: 105px;
-        /* padding: 7px; */
-        /* margin: 10px 20px 10px 10px; */
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -939,9 +509,7 @@
     
     .mainImageFourth {
         width: 100%;
-        height: 105px;
-        /* padding: 7px; */
-        margin:0px 20px 10px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -949,9 +517,7 @@
 
     .mainImageFourthHover { 
         width: 100%;
-        height: 105px;
-        /* padding: 7px; */
-        margin: 0px 20px 10px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -962,9 +528,7 @@
     
     .homeImageFifth {
         width: 100%;
-        height: 105px;
-        /* padding: 7px; */
-        margin:0px 20px 20px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -972,9 +536,7 @@
 
     .homeImageFifthHover {
         width: 100%;
-        height: 105px;
-        /* padding: 7px; */
-        margin: 0px 20px 20px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -985,9 +547,7 @@
     
     .mainImageSixth {
         width: 70%;
-        height: 220px;
-        margin: 0px 0px 20px 10px;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -995,9 +555,7 @@
 
     .mainImageSixthHover {
         width: 70%;
-        height: 220px;
-        margin: 0px 0px 20px 10px;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(0%);
         opacity: 100;
@@ -1011,9 +569,7 @@
         height: 100%;
     }
 
-    .bothImages {
-        width: 30%;
-    }   
+  
 
     .contentParagraph {
         max-width: 470px;
@@ -1026,6 +582,21 @@
   }
 
   @media screen and (max-width: 585px) {
+
+
+    .imageFirstPortion {
+        display: flex;
+        height: 50%;
+        margin: 10px 10px 10px 0px;
+        row-gap: 10px;
+    }
+    
+    .imageSecondPortion {
+        display: flex;
+        height: 50%;
+        margin: 0px 10px 10px 0px;
+    }
+
     .mainParent {
         display: flex;
         flex-direction: column;
@@ -1040,7 +611,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 250px 0px 40px 30px;
+        padding: 100px 0px 40px 20px;
         box-sizing: border-box; 
     }
 
@@ -1061,35 +632,30 @@
     .imageFirstPortion {
         display: flex;
         width: 100%;
-        padding: 0 30px;
+        padding: 0 20px;
         /* padding-right: 100px; */
     }
 
     .imageSecondPortion {
         display: flex;
         width: 100%;
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
 
 
     .mainImageOne {
         width: 70%;
-        height: 200px;
-        margin: 20px 10px 10px 0 ;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
         cursor: pointer;
-        /* object-fit: cover; */
     }
 
     .mainImageOneHover {
         width: 70%;
-        height: 200px;
-        margin: 20px 10px 10px 0 ;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -1100,20 +666,15 @@
     
     .mainImageTwo {
         width: 100%;
-        height: 95px;
-        /* padding: 7px; */
-        /* margin: 20px 20px 10px 10px; */
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
-        /* object-fit: cover; */
     }
 
     .mainImageTwoHover {
         width: 100%;
-        height: 95px;
-        /* padding: 7px; */
-        /* margin: 20px 20px 10px 10px; */
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -1124,9 +685,7 @@
     
     .homeImageThree {
         width: 100%;
-        height: 95px;
-        /* padding: 7px; */
-        /* margin: 10px 20px 10px 10px; */
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -1134,9 +693,7 @@
 
     .homeImageThreeHover {
         width: 100%;
-        height: 95px;
-        /* padding: 7px; */
-        /* margin: 10px 20px 10px 10px; */
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -1147,9 +704,7 @@
     
     .mainImageFourth {
         width: 100%;
-        height: 95px;
-        /* padding: 7px; */
-        margin:0px 20px 10px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -1157,9 +712,7 @@
 
     .mainImageFourthHover { 
         width: 100%;
-        height: 95px;
-        /* padding: 7px; */
-        margin: 0px 20px 10px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -1171,9 +724,7 @@
     
     .homeImageFifth {
         width: 100%;
-        height: 95px;
-        /* padding: 7px; */
-        margin:0px 20px 20px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -1181,9 +732,7 @@
 
     .homeImageFifthHover {
         width: 100%;
-        height: 95px;
-        /* padding: 7px; */
-        margin:10px 10px 20px 0;
+        height: 50%;
         position:relative;
         filter: grayscale(0);
         opacity: 100;
@@ -1194,9 +743,7 @@
     
     .mainImageSixth {
         width: 70%;
-        height: 200px;
-        margin: 0px 0px 20px 10px;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(100%);
         opacity: 0.70;
@@ -1204,9 +751,7 @@
 
     .mainImageSixthHover {
         width: 70%;
-        height: 200px;
-        margin: 0px 0px 20px 10px;
-        /* padding: 10px; */
+        height: 100%;
         position:relative;
         filter: grayscale(0%);
         opacity: 100;
@@ -1238,7 +783,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 100px 0px 40px 30px;
+        padding: 100px 0px 40px 20px;
         box-sizing: border-box; 
     }
   }
