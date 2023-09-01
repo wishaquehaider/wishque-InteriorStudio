@@ -244,6 +244,7 @@
         max-width: 650px;
         font-size: 25px;
         transition:  all 500ms ease-in-out;
+        height: 80px;
     }
 
     .imagesSection {
@@ -440,6 +441,7 @@
         margin-top: 20px ;
         font-size: 25px;
         transition:  all 500ms ease-in-out;
+        height: 80px;
     }
     .imagesSection {
         z-index: 1;
@@ -579,6 +581,7 @@
         max-width: 470px;
         font-size: 20px;
         transition:  all 500ms ease-in-out;
+        height: 80px;
     }
     
   

@@ -35,10 +35,10 @@ function Navbar() {
                     <div className={style.hrTag}></div>
                     <Link href={'/about'} >  <h2 onClick={onClickLinks} className={style.navItem}>About</h2> </Link>
                     <div className={style.hrTag}></div>
-                    <h2 className={style.navItem}>Cultural Hub</h2>
+                    {/* <h2 className={style.navItem}>Cultural Hub</h2>
                     <div className={style.hrTag}></div>
                     <h2 className={style.navItem}>Journal</h2>
-                    <div className={style.hrTag}></div>
+                    <div className={style.hrTag}></div> */}
 
                 </div>
 
