@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 
 function MainScreen() {
-  const [text, setText] = useState('Design is our tool to create inspiring experiences that empower people and communities.')
+  const [text, setText] = useState(`Design is our tool to create inspiring experiences that empower people and communities.`)
   const [hover, setHover] = useState(false)
   const [secondHover, setSecondHover] = useState(false)
   const [thirdHover, setThirdHover] = useState(false)
@@ -16,32 +16,32 @@ function MainScreen() {
   const [sixthHover, setSixthHover] = useState(false)
 
   const mouseEnterMainFisrt = () => {
-    setText('2023: An Optimistic Future A Place to experience everyday life in an optimistic future')
+    setText(`2023: An Optimistic Future A Place to experience everyday life in an optimistic future`)
     setHover(true)
   };
 
   const mouseOutMainFisrt = () => {
-    setText('Design is our tool to create inspiring experiences that empower people and communities.')
+    setText(`Design is our tool to create inspiring experiences that empower people and communities.`)
     setHover(false)
   };
 
   const mouseEnterMainSec = () => {
-    setText('Mobile Mercantile Reimagining the business of retail')
+    setText(`Mobile Mercantile Reimagining the business of retail`)
     setSecondHover(true)
   };
 
   const mouseLeaveMainSec = () => {
-    setText('Design is our tool to create inspiring experiences that empower people and communities.')
+    setText(`Design is our tool to create inspiring experiences that empower people and communities.`)
     setSecondHover(false)
   };
 
   const mouseEnterThird = () => {
-    setText('Full Moon Reflected on the Ocean experiences that empower people and communities')
+    setText(`Full Moon Reflected on the Ocean experiences that empower people and communities`)
     setThirdHover(true)
   }
 
   const mouseLeaveThird = () => {
-    setText('Design is our tool to create inspiring experiences that empower people and communities.')
+    setText(`Design is our tool to create inspiring experiences that empower people and communities.`)
     setThirdHover(false)
   };
 
@@ -51,27 +51,27 @@ function MainScreen() {
   };
 
   const mouseLeaveFouth = () => {
-    setText('Design is our tool to create inspiring experiences that empower people and communities.')
+    setText(`Design is our tool to create inspiring experiences that empower people and communities.`)
     setForthHover(false)
   };
 
   const mouseEnterfifth = () => {
-    setText('Daniles Regent Park Community driven design.')
+    setText(`Daniles Regent Park Community driven design.`)
     setFifthHover(true)
   };
 
   const mouseLeavefifth = () => {
-    setText('Design is our tool to create inspiring experiences that empower people and communities.')
+    setText(`Design is our tool to create inspiring experiences that empower people and communities.`)
     setFifthHover(false)
   };
 
   const mouseEnterSixth = () => {
-    setText('Refuge in the sky Balancing famaliarity with novelty')
+    setText(`Refuge in the sky Balancing famaliarity with novelty`)
     setSixthHover(true)
   };
 
   const mouseLeaveSixth = () => {
-    setText('Design is our tool to create inspiring experiences that empower people and communities.')
+    setText(`Design is our tool to create inspiring experiences that empower people and communities.`)
     setSixthHover(false)
   };
 
