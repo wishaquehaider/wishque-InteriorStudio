@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { PiWhatsappLogoThin } from 'react-icons/pi';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { RiYoutubeLine } from 'react-icons/ri';
+import { AiOutlineInstagram } from 'react-icons/ai'
 
 function Navbar() {
     const [navStyle, setNavStyle] = useState(false);
@@ -26,9 +27,6 @@ function Navbar() {
                 setNavStyle(false)
             }} className={navStyle ? style.navImageCross : style.navImageCrossNone} fontSize={25} />
 
-           <Link href={'/'}>  <div className={navStyle ? style.logoNone : style.logo}>
-                <Image src={'/studioLogo.png'} fill={true} />
-            </div> </Link>
             <div className={style.navContentFlex}>
 
                 <div className={navStyle ? style.parentContent : style.parentContentNone}>
@@ -40,7 +38,6 @@ function Navbar() {
                     <div className={style.hrTag}></div>
                     <Link href={'/about'} >  <h2 onClick={onClickLinks} className={style.navItem}>About</h2> </Link>
                     <div className={style.hrTag}></div>
-
 
                 </div>
 
@@ -69,7 +66,7 @@ function Navbar() {
               <div className={style.iconsMain1}>
                 <ul className={style.IconsContainer}>
 
-                  <li>
+                <li>
                     <a
                      href='https://wa.me/923227173333'
                      target='_blank'
@@ -80,7 +77,7 @@ function Navbar() {
 
                   <li>
                     <a
-                      href="https://www.linkedin.com/company/techloset"
+                      href="https://www.linkedin.com/in/zahir-saleem-aab545281/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -90,11 +87,20 @@ function Navbar() {
 
                   <li>
                     <a
-                      href="https://www.youtube.com/channel/UCPC0RXZrvh50scjAzJC-IWg/channels"
+                      href="https://www.youtube.com/@appearstudio"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <RiYoutubeLine className={style.icon} />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/appears.interiors/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AiOutlineInstagram className={style.icon} />
                     </a>
                   </li>
                 </ul>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { PiWhatsappLogoThin } from 'react-icons/pi';
 import { FaLinkedinIn } from 'react-icons/fa'
 import { RiYoutubeLine } from 'react-icons/ri';
+import { AiOutlineInstagram } from 'react-icons/ai'
 
 function Footer() {
     return (
@@ -31,7 +32,7 @@ function Footer() {
               </div>
                 <ul className={style.IconsContainer}>
 
-                  <li>
+                <li>
                     <a
                      href='https://wa.me/923227173333'
                      target='_blank'
@@ -42,7 +43,7 @@ function Footer() {
 
                   <li>
                     <a
-                      href="https://www.linkedin.com/company/techloset"
+                      href="https://www.linkedin.com/in/zahir-saleem-aab545281/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -52,11 +53,20 @@ function Footer() {
 
                   <li>
                     <a
-                      href="https://www.youtube.com/channel/UCPC0RXZrvh50scjAzJC-IWg/channels"
+                      href="https://www.youtube.com/@appearstudio"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <RiYoutubeLine className={style.icon} />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/appears.interiors/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AiOutlineInstagram className={style.icon} />
                     </a>
                   </li>
                 </ul>

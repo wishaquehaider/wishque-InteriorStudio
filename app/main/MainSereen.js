@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { PiWhatsappLogoThin } from 'react-icons/pi';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { RiYoutubeLine } from 'react-icons/ri';
+import { AiOutlineInstagram } from 'react-icons/ai'
 
 function MainScreen() {
 
@@ -85,6 +86,12 @@ function MainScreen() {
   return (
     <div className={style.mainParent}>
       <div className={style.homeContentParent}>
+
+
+      <Link href={'/'}>  <div className={ style.logo}>
+                <Image src={'/studioLogo.png'} fill={true} />
+            </div> </Link>
+
         <a href='mailto:appear.interior@gmail.com'>
           <p className={style.mail}>appear.interior@gmail.com</p>
         </a>
@@ -109,7 +116,7 @@ function MainScreen() {
 
                   <li>
                     <a
-                      href="https://www.linkedin.com/company/techloset"
+                      href="https://www.linkedin.com/in/zahir-saleem-aab545281/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -119,11 +126,20 @@ function MainScreen() {
 
                   <li>
                     <a
-                      href="https://www.youtube.com/channel/UCPC0RXZrvh50scjAzJC-IWg/channels"
+                      href="https://www.youtube.com/@appearstudio"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <RiYoutubeLine className={style.icon} />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/appears.interiors/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AiOutlineInstagram className={style.icon} />
                     </a>
                   </li>
                 </ul>
