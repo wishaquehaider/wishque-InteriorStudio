@@ -83,7 +83,7 @@ function MainScreen() {
   return (
     <div className={style.mainParent}>
       <div className={style.homeContentParent}>
-        <h1 className={style.headingContent} >Appear's Interior Studio</h1>
+        <h1 className={style.headingContent} >{`Appear's Interior Studio`}</h1>
         <p className={style.contentParagraph}>{text}</p>
       </div>
 
