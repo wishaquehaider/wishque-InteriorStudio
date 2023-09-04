@@ -144,10 +144,12 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0px 0px 40px 75px;
+    justify-content: space-between;
+    padding: 100px 0px 40px 75px;
     box-sizing: border-box; 
-    row-gap: 60px;
+    row-gap: 0px;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -156,6 +158,7 @@
     max-width: 470px;
     font-size: 25px;
     transition:  all 500ms ease-in-out;
+    
 }
 
 .description {
@@ -198,8 +201,179 @@
     margin-bottom: 30px;
 }
 
+.mail {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.footerHeading {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.whatsApp {
+    border-radius: 50%;
+    transition: ease-in-out 0.5s;
+    font-size: 25px;
+    text-align: center;
+    padding: 1px;
+}
 
 
+
+.youtube {
+    border-radius: 50%;
+    transition: ease-in-out 0.5s;
+    font-size: 25px;
+    text-align: center;
+    padding: 1px;
+ }
+
+
+ .linkedIn {
+    border-radius: 50%;
+    transition: ease-in-out 0.5s;
+    font-size: 25px;
+    text-align: center;
+    padding: 1px;
+ }
+
+
+
+ .linkedInParent {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(76, 76, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1px;
+ }
+
+ .youtubeParent {
+    width: 35px;
+    height: 35px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1px;
+ }
+
+.whatsAppParent {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1px;
+    position: relative;
+}
+
+.whatsAppParent:hover {
+    background-color: rgb(0, 174, 0);
+    transition: ease-in-out 0.6s;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+ .iconsParent {
+    display: flex;
+    column-gap: 15px;
+    padding-top: 10px;
+}
+
+/* icona */
+
+.IconsContainer {
+    display: flex;
+    column-gap: 10px;
+}
+
+.IconsContainer li a {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #090909;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .IconsContainer li a:hover {
+    border: none;
+  }  
+
+
+.IconsContainer li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 1s;
+  font-size: 25px;
+}
+
+.IconsContainer li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.IconsContainer li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.IconsContainer li a:hover:before {
+  top: 0;
+}
+
+.IconsContainer li:nth-child(1) a:before {
+  background: rgb(0, 183, 0);
+}
+
+.IconsContainer li:nth-child(2) a:before {
+  background:#2867b2;
+}
+
+.IconsContainer li:nth-child(3) a:before {
+  background: red;
+}
+
+.Follow {
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.footerBlack {
+    width: 100%;
+    height: 20px;
+    background-color: black;
+}
+
+.footerText {
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
 
 @media screen and (max-width: 1260px) {
     .contentParagraph {
@@ -238,13 +412,13 @@
 
     .homeContentParent {
         width: 100%;
-        height: 30%;
+        height: 40%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 100px 0px 40px 100px;
         box-sizing: border-box; 
-        row-gap: 10px;
+        row-gap: 30px;
         /* background-color: red; */
     }
 
@@ -260,7 +434,7 @@
         z-index: 1;
         width: 100%;
         height: 70%;
-        height: 70vh;
+        height: 60vh;
     }
 
     .imageFirstPortion {
@@ -412,6 +586,14 @@
 
 @media screen and (max-width: 767px) {
 
+    .mail {
+        position: absolute;
+        right: 0;
+        top: 25px;
+        right: 50px;
+        cursor: pointer;
+        font-weight: 500;
+    }
 
     .imageFirstPortion {
         display: flex;
@@ -440,8 +622,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 100px 0px 40px 30px;
+        padding: 50px 0px 40px 30px;
         box-sizing: border-box; 
+        row-gap: 50px;
     }
 
     .contentParagraph {
@@ -627,8 +810,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 100px 0px 40px 20px;
+        padding: 50px 0px 40px 20px;
         box-sizing: border-box; 
+        row-gap: 50px;
     }
 
     .contentParagraph {
@@ -790,6 +974,9 @@
         font-size: 20px;
         transition:  all 500ms ease-in-out;
     }
+
+
+    
   }
 
   @media screen and (max-width: 480px) {

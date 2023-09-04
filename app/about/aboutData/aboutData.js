@@ -1,5 +1,11 @@
 import React from 'react';
 import style from '@/style/about/aboutData.module.css'
+import Link from 'next/link';
+import { PiWhatsappLogoThin } from 'react-icons/pi';
+import { AiOutlineYoutube } from 'react-icons/ai';
+import { BsLinkedin } from 'react-icons/bs';
+import { FaLinkedinIn } from 'react-icons/fa'
+import Footer from '@/(components)/footer/footer';
 
 function AboutData() {
     const data = [
@@ -185,7 +191,7 @@ function AboutData() {
                     <h2 className={style.mainHeading}>Awards</h2>
                     <div>
                         {
-                            data.map((item,i) => {
+                            data.map((item, i) => {
                                 return <>
                                     <p key={i} className={style.paragraphs}>{item.history}</p>
                                 </>
@@ -199,7 +205,7 @@ function AboutData() {
                     <h2 className={style.mainHeading}>Press</h2>
                     <div>
                         {
-                            Press.map((item,i) => {
+                            Press.map((item, i) => {
                                 return <>
                                     <p key={i} className={style.paragraphs}>{item.data}</p>
                                 </>
@@ -210,30 +216,9 @@ function AboutData() {
             </div>
             <div className={style.hrTag}></div>
 
+           <Footer/>
 
-            <div className={style.footer}>
-                <div className={style.footerInfo} >
-                   <div>
-                      <p>  +1 (416) 761-9736</p>
-                       <p> Follow Us </p>
-                       <p> Send us an Email </p>
-                    </div>  
-                    
-                    <div>
-                        <p>91 Pelham Avenue</p>
-                        <p>Toronto, Canada</p>
-                        <p> M6N 1A5</p>
-                    </div>                
-                </div>
-
-                <div>
-                    <p>
-                        工作室
-                        微信
-                        电子邮件
-                    </p>
-                </div>
-            </div>
+     
         </div>
     )
 }

@@ -4,7 +4,9 @@ import Image from 'next/image';
 import style from '../../style/home/homeScreen.module.css';
 import '../../app/globals.css'
 import Link from 'next/link';
-
+import { PiWhatsappLogoThin } from 'react-icons/pi';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { RiYoutubeLine } from 'react-icons/ri';
 
 function MainScreen() {
 
@@ -83,8 +85,51 @@ function MainScreen() {
   return (
     <div className={style.mainParent}>
       <div className={style.homeContentParent}>
-        <h1 className={style.headingContent} >{`Appear's Interior Studio`}</h1>
+        <a href='mailto:appear.interior@gmail.com'>
+          <p className={style.mail}>appear.interior@gmail.com</p>
+        </a>
+
         <p className={style.contentParagraph}>{text}</p>
+
+        <div className={style.iconsMain}>
+              <div className={style.FollowContainer}>
+                <p className={`${style.Follow} title`}>Follow us</p>
+              </div>
+              <div className={style.iconsMain1}>
+                <ul className={style.IconsContainer}>
+
+                  <li>
+                    <a
+                     href='https://wa.me/923227173333'
+                     target='_blank'
+                    >
+                      <PiWhatsappLogoThin className={style.icon}  />
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/techloset"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaLinkedinIn className={style.icon} />
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCPC0RXZrvh50scjAzJC-IWg/channels"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <RiYoutubeLine className={style.icon} />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
       </div>
 
       <div className={style.imagesSection}>

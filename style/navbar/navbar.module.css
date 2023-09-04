@@ -2,6 +2,7 @@
     cursor: pointer;
     margin: 25px 25px 0 25px;
     position: fixed;
+    z-index: 5;
 }
 
 .navImageNone {
@@ -12,6 +13,7 @@
     position: absolute;
     cursor: pointer;
     margin: 25px 25px 0 25px;    
+    z-index: 6;
 }
 
 .navImageCrossNone {
@@ -185,6 +187,75 @@
     font-weight: 500;
  }
 
+
+ /* icona */
+
+.IconsContainer {
+    display: flex;
+    column-gap: 10px;
+}
+
+.IconsContainer li a {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #000000;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .IconsContainer li a:hover {
+    border: none;
+  }  
+
+
+.IconsContainer li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 1s;
+  font-size: 25px;
+}
+
+.IconsContainer li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.IconsContainer li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.IconsContainer li a:hover:before {
+  top: 0;
+}
+
+.IconsContainer li:nth-child(1) a:before {
+  background: rgb(0, 183, 0);
+}
+
+.IconsContainer li:nth-child(2) a:before {
+  background:#2867b2;
+}
+
+.IconsContainer li:nth-child(3) a:before {
+  background: red;
+}
+
+.Follow {
+    font-weight: 500;
+    padding-bottom: 10px;
+}
 
 @media screen and (max-width: 767px) {
        

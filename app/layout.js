@@ -1,6 +1,7 @@
 // import './globals.css'
-import Navbar from '@/(components)/navbar/navbar'
-import { Inter } from 'next/font/google'
+import Navbar from '@/(components)/navbar/navbar';
+import { Inter } from 'next/font/google';
+import style from '@/style/home/homeScreen.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -14,6 +15,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar/>
         {children}
+        <div className={style.footerBlack}>
+          <p className={style.footerText}>©2023 Appears Interior Studio Inc. </p>
+        </div>
       </body>
     </html>
   )
