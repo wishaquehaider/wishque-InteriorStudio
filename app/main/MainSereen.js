@@ -46,7 +46,7 @@ function MainScreen() {
   };
 
   const mouseEnterFouth = () => {
-    setText('The Studio A collective mind of diverse individuals')
+    setText(`The Studio A collective mind of diverse individuals`)
     setForthHover(true)
   };
 
