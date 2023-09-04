@@ -3,11 +3,8 @@ import style from '@/style/projects/projects.module.css'
 import Image from 'next/image';
 const axios = require('axios');
 import Link from 'next/link';
-import Detail from '../[slug]/page';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { Scrollbar } from 'smooth-scrollbar-react';
-import SmoothScroll from '@/(components)/smoothScroll';
 // import { Link } from 'react-scroll';
 
 const ProjectData = ({ response }) => {
