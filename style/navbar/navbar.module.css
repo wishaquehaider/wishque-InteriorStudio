@@ -199,7 +199,7 @@
     width: 35px;
     height: 35px;
     background-color: #fff;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     display: block;
     border-radius: 50%;
     position: relative;
@@ -446,6 +446,12 @@
         flex-direction: column;
         width: 100%;
         padding: 0px 35px 40px 35px;
+    }
+
+    .IconsContainer {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
     }
 
    

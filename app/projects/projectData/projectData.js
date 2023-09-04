@@ -74,7 +74,7 @@ const ProjectData = ({ response }) => {
     <div className={style.mainParent}>
       <div className={style.main}>
 
-        <h1 className={style.mainHeading}>Projects</h1>
+        <h1 className={style.mainHeading}>Project</h1>
         <div className={style.contentParent}>
           <div className={style.contentChild}>
             <p className={style.heading}>Date</p>
@@ -140,7 +140,7 @@ const ProjectData = ({ response }) => {
     <div>
 
       <div className={style.parentMobile}>
-        <h1 className={style.headingContent}>Projects</h1>
+        <h1 className={style.headingContent}>Projecs</h1>
         {
           newArray.map(item => {
             let route = item.content.replaceAll(' ', '-').toLowerCase();

@@ -65,6 +65,7 @@ function Navbar() {
               <div className={style.FollowContainer}>
                 <p className={`${style.Follow} title`}>Follow us</p>
               </div>
+              
               <div className={style.iconsMain1}>
                 <ul className={style.IconsContainer}>
 

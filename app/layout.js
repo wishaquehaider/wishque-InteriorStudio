@@ -10,13 +10,17 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+  let date =  new Date();
+  let year = date.getFullYear();
+
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navbar/>
         {children}
         <div className={style.footerBlack}>
-          <p className={style.footerText}>©2023 Appears Interior Studio Inc. </p>
+          <p className={style.footerText}>{`©${year} Appears Interior Studio Inc. `}</p>
         </div>
       </body>
     </html>

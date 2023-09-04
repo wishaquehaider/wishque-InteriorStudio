@@ -2,8 +2,9 @@ import React from 'react'
 import style from '@/style/footer/footer.module.css';
 import Link from 'next/link';
 import { PiWhatsappLogoThin } from 'react-icons/pi';
-import { AiOutlineYoutube } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa'
+import { RiYoutubeLine } from 'react-icons/ri';
+
 function Footer() {
     return (
         <div className={style.footer }>
@@ -23,20 +24,43 @@ function Footer() {
                 </div>
             </div>
 
-            <div className={style.footerIconsParent}>
-                <p className={style.footerHeading}>Follow us</p>
-                <div className={style.iconsParent}>
-                    <div className={style.whatsAppParent}>
-                        <Link target='_blank' href={'https://wa.me/923227173333'}> <PiWhatsappLogoThin className={style.whatsApp} color='white' fontSize={35} /> </Link>
-                    </div>
-                    <div className={style.youtubeParent}>
-                        <Link target='_blank' href={'https://www.youtube.com/@appearstudio'}>  <AiOutlineYoutube className={style.youtube} color='white' fontSize={35} /> </Link>
-                    </div>
-                    <div className={style.youtubeParent}>
-                        <Link target='_blank' href={'https://www.linkedin.com/in/zahir-saleem-aab545281/'} > <FaLinkedinIn color='white' className={style.linkedIn} fontSize={35} /> </Link>
-                    </div>
-                </div>
-            </div>
+
+            <div className={style.iconsMain1}>
+            <div className={style.FollowContainer}>
+                <p className={`${style.Follow} title`}>Follow us</p>
+              </div>
+                <ul className={style.IconsContainer}>
+
+                  <li>
+                    <a
+                     href='https://wa.me/923227173333'
+                     target='_blank'
+                    >
+                      <PiWhatsappLogoThin className={style.icon}  />
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/techloset"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaLinkedinIn className={style.icon} />
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCPC0RXZrvh50scjAzJC-IWg/channels"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <RiYoutubeLine className={style.icon} />
+                    </a>
+                  </li>
+                </ul>
+              </div>
         </div>
     )
 }

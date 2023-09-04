@@ -144,10 +144,11 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
     padding: 100px 0px 40px 75px;
     box-sizing: border-box; 
-    row-gap: 0px;
+    row-gap: 100px;
     position: relative;
     z-index: 1;
 }
