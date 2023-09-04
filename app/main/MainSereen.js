@@ -4,6 +4,10 @@ import Image from 'next/image';
 import style from '../../style/home/homeScreen.module.css';
 import '../../app/globals.css'
 import Link from 'next/link';
+import { PiWhatsappLogoThin } from 'react-icons/pi';
+import { AiOutlineYoutube } from 'react-icons/ai';
+import { BsLinkedin } from 'react-icons/bs'
+import { BiLogoGmail } from 'react-icons/bi'
 
 function MainScreen() {
 
@@ -16,12 +20,12 @@ function MainScreen() {
   const [fifthHover, setFifthHover] = useState(false);
   const [sixthHover, setSixthHover] = useState(false);
 
-  const mouseEnterMainFisrt  = () => {
+  const mouseEnterMainFisrt = () => {
     setText('2023: An Optimistic Future A Place to experience everyday life in an optimistic future')
     setHover(true)
   };
 
-  const mouseOutMainFisrt  = () => {
+  const mouseOutMainFisrt = () => {
     setText('Design is our tool to create inspiring experiences that empower people and communities.')
     setHover(false)
   };
@@ -67,8 +71,8 @@ function MainScreen() {
   };
 
   const mouseEnterSixth = () => {
-       setText('Refuge in the sky Balancing famaliarity with novelty');
-       setSixthHover(true)
+    setText('Refuge in the sky Balancing famaliarity with novelty');
+    setSixthHover(true)
   }
 
   const mouseLeaveSixth = () => {
@@ -77,61 +81,59 @@ function MainScreen() {
   }
 
 
- 
+
 
   return (
     <div className={style.mainParent}>
       <div className={style.homeContentParent}>
-        <h2 className={style.headingContent}>Appears Interior studio</h2>
-        <div>
-        <p className={style.contentParagraph}>{text}</p>
-        </div>
-        <p className={style.lastContent}>©2023 Appears Interior studio Inc</p>
+          <h1 className={style.headingContent} >Appear's Interior Studio</h1>
+          <p className={style.contentParagraph}>{text}</p>
       </div>
 
-      <div className={style.imagesSection}> 
+      <div className={style.imagesSection}>
 
         <div className={style.imageFirstPortion}>
-       <div onMouseEnter={mouseEnterMainFisrt} onMouseLeave={mouseOutMainFisrt} className={ hover ? style.mainImageOneHover : style.mainImageOne} >
-            <Image alt='homeFirstImage' className={style.myImage} src={'/homeScreen/homeFirst.jpg'}             
+          
+          <div onMouseEnter={mouseEnterMainFisrt} onMouseLeave={mouseOutMainFisrt} className={hover ? style.mainImageOneHover : style.mainImageOne} >
+          <Link href={'/projects/2033-an-optimistic-future'}>  <Image alt='homeFirstImage' className={style.myImage} src={'/homeScreen/homeFirst.jpg'}
               fill={true}
-            />
+            />   </Link>
           </div>
 
           <div className={style.bothImages}>
-            <div onMouseEnter={mouseEnterMainSec} onMouseLeave={mouseLeaveMainSec} className={ secondHover ?  style.mainImageTwoHover : style.mainImageTwo}>
-              <Image  alt='homeSecondImage' className={style.myImage} src={'/homeScreen/homeSecond.jpg'}
+            <div onMouseEnter={mouseEnterMainSec} onMouseLeave={mouseLeaveMainSec} className={secondHover ? style.mainImageTwoHover : style.mainImageTwo}>
+            <Link href={'/projects/runxi-residence-phase-1'}>  <Image alt='homeSecondImage' className={style.myImage} src={'/homeScreen/homeSecond.jpg'}
                 fill={true}
-              />
+              /> </Link>
             </div>
 
             <div onMouseEnter={mouseEnterThird} onMouseLeave={mouseLeaveThird} className={thirdHover ? style.homeImageThreeHover : style.homeImageThree} >
-              <Image  alt='homeThirdImage' className={style.myImage} src={'/homeScreen/homeThird.jpg'}
+             <Link href={'/projects/full-moon-reflected-on-the-ocean-at-01-34'}> <Image alt='homeThirdImage' className={style.myImage} src={'/homeScreen/homeThird.jpg'}
                 fill={true}
-              />
+              /> </Link> 
             </div>
           </div>
         </div>
 
         <div className={style.imageSecondPortion}>
           <div className={style.bothImages}>
-            <div onMouseEnter={mouseEnterFouth} onMouseLeave={mouseLeaveFouth} className={ forthHover ? style.mainImageFourthHover : style.mainImageFourth}>
-              <Image  alt='homeFourthImage' className={style.myImage} src={'/homeScreen/homeFourth.jpg'}
+            <div onMouseEnter={mouseEnterFouth} onMouseLeave={mouseLeaveFouth} className={forthHover ? style.mainImageFourthHover : style.mainImageFourth}>
+            <Link href={'/about'}>  <Image alt='homeFourthImage' className={style.myImage} src={'/homeScreen/homeFourth.jpg'}
                 fill={true}
-              />
+              /> </Link>
             </div>
 
-            <div onMouseEnter={mouseEnterfifth} onMouseLeave={mouseLeavefifth} className={ fifthHover ? style.homeImageFifthHover : style.homeImageFifth}>
-              <Image  alt='homeFifthImage' className={style.myImage} src={'/homeScreen/homeFifth.jpg'}
+            <div onMouseEnter={mouseEnterfifth} onMouseLeave={mouseLeavefifth} className={fifthHover ? style.homeImageFifthHover : style.homeImageFifth}>
+             <Link href={'/projects/dueast'}>  <Image alt='homeFifthImage' className={style.myImage} src={'/homeScreen/homeFifth.jpg'}
                 fill={true}
-              />
+              /> </Link>
             </div>
           </div>
 
-          <div onMouseEnter={mouseEnterSixth} onMouseLeave={mouseLeaveSixth} className={ sixthHover ? style.mainImageSixthHover : style.mainImageSixth} >
-            <Image  alt='homeSixthImage' className={style.myImage} src={'/homeScreen/homeSixth.jpg'}
+          <div onMouseEnter={mouseEnterSixth} onMouseLeave={mouseLeaveSixth} className={sixthHover ? style.mainImageSixthHover : style.mainImageSixth} >
+           <Link href={'/projects/refuge-in-the-sky'} > <Image alt='homeSixthImage' className={style.myImage} src={'/homeScreen/homeSixth.jpg'}
               fill={true}
-            />
+            /> </Link>
           </div>
         </div>
 

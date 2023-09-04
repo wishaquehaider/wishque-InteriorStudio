@@ -144,16 +144,22 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 100px 0px 40px 75px;
+    justify-content: space-evenly;
+    padding: 0px 0px 40px 75px;
     box-sizing: border-box; 
     row-gap: 60px;
 }
+
+
 
 .contentParagraph {
     max-width: 470px;
     font-size: 25px;
     transition:  all 500ms ease-in-out;
+}
+
+.description {
+    justify-content: center;
 }
 
 .lastContent {
@@ -191,6 +197,9 @@
     position: relative;
     margin-bottom: 30px;
 }
+
+
+
 
 @media screen and (max-width: 1260px) {
     .contentParagraph {
