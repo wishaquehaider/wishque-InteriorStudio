@@ -26,9 +26,9 @@ function Navbar() {
                 setNavStyle(false)
             }} className={navStyle ? style.navImageCross : style.navImageCrossNone} fontSize={25} />
 
-            <div className={navStyle ? style.logoNone : style.logo}>
+           <Link href={'/'}>  <div className={navStyle ? style.logoNone : style.logo}>
                 <Image src={'/studioLogo.png'} fill={true} />
-            </div>
+            </div> </Link>
             <div className={style.navContentFlex}>
 
                 <div className={navStyle ? style.parentContent : style.parentContentNone}>
