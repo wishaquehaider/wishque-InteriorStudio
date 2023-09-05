@@ -137,6 +137,7 @@
     width: 100%;
     height: 100vh;
     background-color: white;
+    position: relative;
 }
 
 .homeContentParent {
@@ -146,7 +147,7 @@
     flex-direction: column;
     /* justify-content: space-between; */
     /* justify-content: space-evenly; */
-    padding: 0px 0px 40px 75px;
+    padding: 0px 0px 40px 40px;
     box-sizing: border-box; 
     row-gap: 100px;
     position: relative;
@@ -206,7 +207,7 @@
     position: fixed;
     right: 0;
     top: 25px;
-    right: 50%;
+    right: 55%;
     cursor: pointer;
     font-weight: 500;
 }
@@ -308,6 +309,7 @@
     cursor: pointer;
     z-index: 1;
 }
+
 
 
 /* icona */
@@ -414,18 +416,19 @@
         align-content: center;
         align-items: center;
     }
-
-    .homeContentParent {
+ 
+     .homeContentParent {
         width: 100%;
         height: 60vh;
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
         padding: 50px 100px 40px 100px;
         box-sizing: border-box; 
         row-gap: 30px;
-        /* background-color: red; */
-    }
+    } 
+
+
+
 
 
     .contentParagraph {
@@ -586,14 +589,7 @@
         width: 30%;
     }   
 
-    .mail {
-        position: fixed;
-        right: 0;
-        top: 25px;
-        right: 100px;
-        cursor: pointer;
-        font-weight: 500;
-    }
+
 
     .logo {
         width: 70px;
@@ -610,7 +606,7 @@
         position: absolute;
         right: 0;
         top: 25px;
-        right: 50px;
+        right: 100px;
         cursor: pointer;
         font-weight: 500;
     }
@@ -625,7 +621,7 @@
         position: absolute;
         right: 0;
         top: 25px;
-        right: 50px;
+        right: 80px;
         cursor: pointer;
         font-weight: 500;
     }
@@ -1021,6 +1017,14 @@
         transition:  all 500ms ease-in-out;
     }
 
+    .mail {
+        position: absolute;
+        right: 0;
+        top: 25px;
+        right: 70px;
+        cursor: pointer;
+        font-weight: 500;
+    }
 
     
   }

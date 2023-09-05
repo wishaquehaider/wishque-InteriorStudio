@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
 import style from '../../style/home/homeScreen.module.css';
 import '../../app/globals.css'
@@ -8,8 +8,10 @@ import { PiWhatsappLogoThin } from 'react-icons/pi';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { RiYoutubeLine } from 'react-icons/ri';
 import { AiOutlineInstagram } from 'react-icons/ai'
+import Navbar from '@/(components)/navbar/navbar';
 
 function MainScreen() {
+
 
   const [text, setText] = useState('Design is our tool to create inspiring experiences that empower people and communities.');
   const [hover, setHover] = useState(false);
@@ -80,20 +82,23 @@ function MainScreen() {
     setSixthHover(false);
   }
 
+ 
 
-
-
+  
+  
+  
   return (
     <div className={style.mainParent}>
+      <Navbar inHome={true} />
       <div className={style.homeContentParent}>
 
-
+ 
       <Link href={'/'}>  <div className={ style.logo}>
                 <Image src={'/studioLogo.png'} fill={true} />
             </div> </Link>
 
-        <a href='mailto:appear.interior@gmail.com'>
-          <p className={style.mail}>appear.interior@gmail.com</p>
+        <a href='tel:923227173333'>
+          <p className={style.mail}>+923227173333</p>
         </a>
 
         <p className={style.contentParagraph}>{text}</p>
@@ -153,14 +158,14 @@ function MainScreen() {
         <div className={style.imageFirstPortion}>
 
           <div onMouseEnter={mouseEnterMainFisrt} onMouseLeave={mouseOutMainFisrt} className={hover ? style.mainImageOneHover : style.mainImageOne} >
-            <Link href={`/projects/2033-an-optimistic-future`}>  <Image alt='homeFirstImage' className={style.myImage} src={'/homeScreen/homeFirst.jpg'}
+            <Link href={`/projects/2033-an-optimistic-future`}>  <Image alt='homeFirstImage' className={style.myImage} src={'/homeScreen/InteriorInstaTwo.jpg'}
               fill={true}
             />   </Link>
           </div>
 
           <div className={style.bothImages}>
             <div onMouseEnter={mouseEnterMainSec} onMouseLeave={mouseLeaveMainSec} className={secondHover ? style.mainImageTwoHover : style.mainImageTwo}>
-              <Link href={`/projects/runxi-residence-phase-1`}>  <Image alt='homeSecondImage' className={style.myImage} src={'/homeScreen/homeSecond.jpg'}
+              <Link href={`/projects/runxi-residence-phase-1`}>  <Image alt='homeSecondImage' className={style.myImage} src={'/homeScreen/InteriorInstaOne.jpg'}
                 fill={true}
               /> </Link>
             </div>
@@ -172,11 +177,11 @@ function MainScreen() {
             </div>
           </div>
         </div>
-
+                      
         <div className={style.imageSecondPortion}>
           <div className={style.bothImages}>
             <div onMouseEnter={mouseEnterFouth} onMouseLeave={mouseLeaveFouth} className={forthHover ? style.mainImageFourthHover : style.mainImageFourth}>
-              <Link href={`/about`}>  <Image alt='homeFourthImage' className={style.myImage} src={'/homeScreen/homeFourth.jpg'}
+              <Link href={`/about`}>  <Image alt='homeFourthImage' className={style.myImage} src={'/homeScreen/InteriorInstaFour.jpg'}
                 fill={true}
               /> </Link>
             </div>
@@ -189,7 +194,7 @@ function MainScreen() {
           </div>
 
           <div onMouseEnter={mouseEnterSixth} onMouseLeave={mouseLeaveSixth} className={sixthHover ? style.mainImageSixthHover : style.mainImageSixth} >
-            <Link href={`/projects/refuge-in-the-sky`} > <Image alt='homeSixthImage' className={style.myImage} src={'/homeScreen/homeSixth.jpg'}
+            <Link href={`/projects/refuge-in-the-sky`} > <Image alt='homeSixthImage' className={style.myImage} src={'/homeScreen/InteriorInstaThree.jpg'}
               fill={true}
             /> </Link>
           </div>

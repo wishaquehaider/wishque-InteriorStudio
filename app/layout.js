@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
+        {/* <Navbar/> */}
         {children}
         <div className={style.footerBlack}>
           <p className={style.footerText}>{`©${year} Appears Interior Studio Inc. `}</p>

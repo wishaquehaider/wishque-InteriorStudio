@@ -9,7 +9,7 @@ const layout = ({children}) => {
    <div>
 
     <div className={style.navIconCross}>
-    <Link href={'/projects'}>  <RxCross1 fontSize={25} /> </Link> 
+    <Link  href={'/projects'}>  <RxCross1 className={style.crossSlug} fontSize={25} /> </Link> 
     </div>
     {children}
       <Footer/>

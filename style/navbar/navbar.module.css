@@ -1,9 +1,23 @@
+.homeBurger {
+    cursor: pointer;
+    margin: 25px 25px 0 25px;
+    position: fixed;
+    z-index: 5;
+    right: 50%;
+}
+
+.homeBurgerNone {
+    display: none;
+}
+
 .navImage {
     cursor: pointer;
     margin: 25px 25px 0 25px;
     position: fixed;
     z-index: 5;
+    left: 0px;
 }
+
 
 .navImageNone {
     display: none;
@@ -29,8 +43,6 @@
     transition: 0.4s;
     z-index: 2;
     display: flex;
-    
-    /* flex-direction: column; */
 }
 
 .mainNone {
@@ -267,11 +279,52 @@
 padding-top: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+
+
+    .navImage {
+        cursor: pointer;
+        margin: 0px;
+        position: absolute;
+        z-index: 5;
+        left: 0px;
+        right: 100px;
+        left: 25px;
+        top: 25px;
+    }
+
+    .homeBurger {
+    cursor: pointer;
+    margin:0px;
+    position: absolute;
+    z-index: 5;
+    right: 25px;
+    top: 25px;
+
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 208, 208);
+    width: 100%;
+    height: 100vh;
+    transition: ease-in-out 0.4s;
+    z-index: 2;
+    display: flex;
+}
+
+
+}
+
 @media screen and (max-width: 767px) {
        
     .logo {
         width: 70px;
-        height: 60px;
+        height: 70px;
         position: relative;
         object-fit: cover;
         margin: 15px 20px 60px 25px;
@@ -280,9 +333,13 @@ padding-top: 10px;
 
     .navImage {
         cursor: pointer;
-        position: absolute; 
-        right: -10px;
-        margin-left: 190px;
+        margin: 0px;
+        position: absolute;
+        z-index: 999;
+        left: 0px;
+        right: 100px;
+        left: 0px;
+        top: 25px;
     }
 
     .main {
@@ -468,6 +525,15 @@ padding-top: 10px;
         border-top: 1px solid #fff;
         padding-top: 10px;
         }
+
+        .navImage {
+            cursor: pointer;
+            margin: 0px;
+            position: absolute;
+            top: 25px;
+            z-index: 5;
+            right: 20px;
+        }     
    
 
   

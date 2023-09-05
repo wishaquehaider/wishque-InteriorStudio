@@ -1,9 +1,11 @@
 import React from 'react'
 import style from '../../../style/about/aboutHero.module.css'
 import Image from 'next/image';
+import Navbar from '@/(components)/navbar/navbar';
 function AboutHero() {
     return (
         <div className={style.main}>
+            <Navbar/>
             <div className={style.firstSection}>
                 <div className={style.firstContentSection}>
                     <h1 className={style.mainHeading}>About</h1>

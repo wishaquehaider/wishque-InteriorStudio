@@ -100,6 +100,7 @@
     margin: 25px 25px 0 25px;
     position: fixed;
     right: 0;
+    z-index: 6 ;
 }
 
 .mainHeadingNested {
@@ -237,6 +238,16 @@
     display: none;
 }
 
+.crossSlug {
+    z-index: 10;
+    cursor: pointer;
+}
+
+.mobileProjectMain {
+    padding-left: 25px;
+} 
+
+
 @media screen and (max-width: 1280px) {
   
     .imagesSection {
@@ -360,11 +371,19 @@
 
 @media screen and (max-width: 767px) {
 
+
+    .nestedDetailsProject {
+        padding: 0px 40px;
+    }
+    
+
     .navIconCross {
         cursor: pointer;
-        margin: 25px 25px 0 25px;
-        position: fixed;
+        margin: 0px;
+        position: absolute;
         right: 0;
+        right: 0;
+        background-color: rgb(248, 129, 129);
         display: none;
     }
 
@@ -386,8 +405,10 @@
         display: flex;
         flex-direction: column;
         row-gap: 20px;
-        padding: 80px 20px 0px 20px;
+        padding: 80px 0px 0px 0px;
     }
+
+ 
 
     .mainContentNested {
         display: flex;
@@ -409,7 +430,7 @@
     }
 
     .mainParentSlug {
-        padding: 80px 30px 30px 30px;
+        padding: 80px 0px 30px 0px;
     }
 
     .navIconCross {
@@ -464,6 +485,11 @@
         display: flex;
         padding: 10px;
     }
+
+    
+.nestedDetailsProject {
+    padding: 0px 30px;
+}
 }
 
 @media screen and (max-width: 470px) {

@@ -5,6 +5,7 @@ const axios = require('axios');
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Navbar from '@/(components)/navbar/navbar';
 // import { Link } from 'react-scroll';
 
 const ProjectData = ({ response }) => {
@@ -72,6 +73,7 @@ const ProjectData = ({ response }) => {
     <>
 
     <div className={style.mainParent}>
+      <Navbar/>
       <div className={style.main}>
 
         <h1 className={style.mainHeading}>Project</h1>
@@ -137,8 +139,8 @@ const ProjectData = ({ response }) => {
 
     </div>
 
-    <div>
-
+    <div className={style.mobileProjectMain}>
+      <Navbar/>
       <div className={style.parentMobile}>
         <h1 className={style.headingContent}>Projecs</h1>
         {

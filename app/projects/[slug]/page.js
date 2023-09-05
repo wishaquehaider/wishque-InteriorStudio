@@ -2,6 +2,7 @@ import { client } from '@/lib/contentful';
 import React from 'react';
 import style from '@/style/projects/projects.module.css';
 import Image from 'next/image';
+import Navbar from '@/(components)/navbar/navbar';
 
 const Page = async ({ params }) => {
 
@@ -45,6 +46,8 @@ const Page = async ({ params }) => {
 
 
   return (
+    <div className={style.nestedDetailsProject} >
+      <Navbar/>
     <div className={style.mainParentSlug}>
       {
         response.items.map((item,index) => {
@@ -103,6 +106,7 @@ const Page = async ({ params }) => {
       }
       <div className={style.hrTag}></div>
 
+    </div>
     </div>
   )
 }
