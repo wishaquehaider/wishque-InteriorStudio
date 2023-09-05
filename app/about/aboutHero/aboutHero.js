@@ -64,8 +64,8 @@ function AboutHero() {
                         />
                     </div>
 
-                    <hr className={style.hrTag} />
 
+                    <hr className={style.hrTag} />
                 </div>
 
             </div>

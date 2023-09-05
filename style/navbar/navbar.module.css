@@ -18,6 +18,17 @@
     left: 0px;
 }
 
+.navImageCrossHome {
+    position: absolute;
+    right: 50%;
+    margin: 25px 25px 0 25px;
+    cursor: pointer;
+}
+
+.navImageCrossNonehOME {
+    display: none;
+}
+
 
 .navImageNone {
     display: none;
@@ -290,6 +301,15 @@ padding-top: 10px;
         left: 0px;
         right: 100px;
         left: 25px;
+        top: 25px;
+    }
+
+    .navImageCrossHome {
+        position: absolute;
+        right: 50%;
+        margin: 0px;
+        cursor: pointer;
+        right: 25px;
         top: 25px;
     }
 
