@@ -19,9 +19,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {/* <Navbar/> */}
         {children}
-        <div className={style.footerBlack}>
+        {/* <div className={style.footerBlack}>
           <p className={style.footerText}>{`©${year} Appears Interior Studio Inc. `}</p>
-        </div>
+        </div> */}
       </body>
     </html>
   )

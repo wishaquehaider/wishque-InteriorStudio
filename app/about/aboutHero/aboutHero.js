@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navbar from '@/(components)/navbar/navbar';
 function AboutHero() {
     return (
+        <>
         <div className={style.main}>
             <Navbar/>
             <div className={style.firstSection}>
@@ -133,6 +134,7 @@ function AboutHero() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

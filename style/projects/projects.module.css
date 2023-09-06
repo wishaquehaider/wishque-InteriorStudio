@@ -1,7 +1,6 @@
 .mainParent {
     display: flex;
     width: 100%;
- 
     /* row-gap: 70px; */
 }
 
@@ -373,7 +372,7 @@
 
 
     .nestedDetailsProject {
-        padding: 0px 40px;
+        padding: 0px 0px 0px 50px;
     }
     
 
@@ -488,7 +487,7 @@
 
     
 .nestedDetailsProject {
-    padding: 0px 30px;
+    padding: 0px 0px 0px 40px;
 }
 }
 

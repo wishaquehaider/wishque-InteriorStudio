@@ -71,7 +71,7 @@
     width: 100%;
     height: 2px;
     padding: 22px;
-    bottom: -100px;
+    bottom: -60px;
 }
 
 .contentHr {
@@ -129,7 +129,7 @@
 @media screen and (max-width:767px) {
 
     .main {
-        padding: 0 30px;
+        padding: 0px 0px 0px 30px;
     }
 
     .firstSection {

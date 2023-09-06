@@ -71,9 +71,8 @@ const ProjectData = ({ response }) => {
 
   return (
     <>
-
     <div className={style.mainParent}>
-      <Navbar/>
+         <Navbar/>
       <div className={style.main}>
 
         <h1 className={style.mainHeading}>Project</h1>
@@ -120,7 +119,6 @@ const ProjectData = ({ response }) => {
 
         {
           anss.map((item, i) => {
-            console.log('heavy',item);
             let route = item.title.replaceAll(' ', '-').toLowerCase();
             return <>
               <Link href={`projects/${route}`}>
