@@ -159,8 +159,7 @@
 .contentParagraph {
     max-width: 470px;
     font-size: 25px;
-    transition:  all 500ms ease-in-out;
-    
+    transition:  all 500ms ease-in-out;   
 }
 
 .description {
@@ -658,14 +657,7 @@
         row-gap: 50px;
     }
 
-    .contentParagraph {
-        /* max-width:370px; */
-        width: 100%;
-        margin-top: 20px ;
-        font-size: 25px;
-        transition:  all 500ms ease-in-out;
-        height: 80px;
-    }
+
     .imagesSection {
         z-index: 1;
         width: 100%;
@@ -848,7 +840,7 @@
 
     .homeContentParent {
         width: 100%;
-        height: 60vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         /* justify-content: space-between; */
@@ -858,10 +850,9 @@
     }
 
     .contentParagraph {
-        /* max-width:370px; */
-        width: 100%;
-        margin-top: 20px    ;
-        font-size: 25px;
+        max-width:420px;
+        margin-top: 20px ;
+        font-size: 17px;
         transition:  all 500ms ease-in-out;
     }
     .imagesSection {
@@ -1011,11 +1002,7 @@
         width: 30%;
     }   
 
-    .contentParagraph {
-        max-width: 470px;
-        font-size: 20px;
-        transition:  all 500ms ease-in-out;
-    }
+
 
     .mail {
         position: absolute;
@@ -1032,11 +1019,19 @@
   @media screen and (max-width: 480px) {
     .homeContentParent {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         /* justify-content: space-between; */
         padding: 0px 20px 40px 20px;
         box-sizing: border-box; 
     }
+
+    .contentParagraph {
+        max-width:400px;
+        margin-top: 20px ;
+        font-size: 17px;
+        transition:  all 500ms ease-in-out;
+    }
+
   }

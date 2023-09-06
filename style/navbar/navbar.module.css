@@ -321,11 +321,10 @@ padding-top: 10px;
     .homeBurger {
     cursor: pointer;
     margin:0px;
-    position: absolute;
+    position: fixed;
     z-index: 5;
     right: 25px;
     top: 25px;
-
 }
 
 .main {
@@ -463,6 +462,16 @@ padding-top: 10px;
     row-gap: 10px;
     font-size: 12px;
   }
+
+  .homeBurger {
+    cursor: pointer;
+    margin:0px;
+    position: fixed;
+    z-index: 5;
+    right: 20px;
+    top: 28px;
+    font-size: 20px;
+}
 
 }
 
