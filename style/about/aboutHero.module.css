@@ -14,7 +14,7 @@
 
 .firstImage {
     width: 50%;
-    height: 700px;
+    height: 800px;
     position: relative;
     margin: 180px 80px 0px 0px;
 }
@@ -30,7 +30,7 @@
 }
 
 .paraGraphs {
-    font-size: 13px;
+    font-size: 15px;
     opacity: 0.80;
 }
 
@@ -52,8 +52,8 @@
 }
 
 .secondImage {
-    width: 40%;
-    height: 700px;
+    width: 50%;
+    height: 800px;
     position: relative;
     margin: 20px 0px 0px 80px;
 }   

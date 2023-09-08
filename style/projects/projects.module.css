@@ -110,7 +110,7 @@
 .mainHeadingNested {
     font-size: 44px;
     font-weight: 300;
-    padding: 0px 0 40px 0px;
+    padding: 0px 0 60px 0px;
 }
 
 .mainContentNested {
@@ -157,8 +157,8 @@
     display:flex ;
     flex-wrap: wrap;
     /* padding: 10px 80px; */
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 20px;
+    column-gap: 20px;
 }
 
 .imageParentSlug {
