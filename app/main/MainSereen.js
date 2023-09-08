@@ -94,7 +94,7 @@ function MainScreen() {
 
  
       <Link href={'/'}>  <div className={ style.logo}>
-                <Image src={'/studioLogo.png'} fill={true} />
+                <Image alt='logo' src={'/studioLogo.png'} fill={true} />
             </div> </Link>
 
         <a href='tel:923227173333'>

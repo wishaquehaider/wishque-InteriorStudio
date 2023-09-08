@@ -99,11 +99,16 @@
     margin: 25px 25px 0 25px;
     position: fixed;
     right: 0;
-    z-index: 6 ;
+    z-index: 2 ;
+}
+
+.crossSlug {
+    z-index: 0;
+    cursor: pointer;
 }
 
 .mainHeadingNested {
-    font-size: 35px;
+    font-size: 44px;
     font-weight: 300;
     padding: 0px 0 40px 0px;
 }
@@ -119,7 +124,7 @@
 
  
 .paragraphNested {
-    font-size: 12px;
+    font-size: 15px;
     max-width: 750px;
 }
 
@@ -131,12 +136,13 @@
 } 
 
 .nestedSmallText {
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .nestedSmallHeading {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .contentSection {
@@ -237,10 +243,7 @@
     display: none;
 }
 
-.crossSlug {
-    z-index: 10;
-    cursor: pointer;
-}
+
 
 .mobileProjectMain {
     padding-left: 25px;

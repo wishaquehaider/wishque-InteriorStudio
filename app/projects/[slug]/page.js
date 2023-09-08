@@ -51,7 +51,6 @@ const Page = async ({ params }) => {
     <div className={style.mainParentSlug}>
       {
         response.items.map((item,index) => {
-          // console.log('item', item);
           return <div key={index}>
 
             <div  className={style.contentSection}>
