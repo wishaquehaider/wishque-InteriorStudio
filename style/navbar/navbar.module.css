@@ -88,13 +88,13 @@
 
 .navItemMain {
     font-weight: 300;
-    font-size: 44px;
+    font-size: 15px;
     cursor: pointer;
 }
 
 .navItem{
     font-weight: 300;
-    font-size: 44px;
+    font-size: 15px;
     opacity: 0.40;
     cursor: pointer;
 }
