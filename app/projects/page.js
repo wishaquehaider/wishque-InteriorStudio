@@ -1,16 +1,10 @@
 import React from 'react'
 import ProjectData from './projectData/projectData';
-import { client } from '@/lib/contentful';
+import { client } from '@/app/lib/contentful';
 
 const page = async() => {
-  const response = (await client.getEntries({ content_type: "project" }));
-  JSON.stringify(response)
-  return (
-
-    <div>
-        <ProjectData response={response} />
-    </div>
-  )
+  const response = JSON.stringify(await client.getEntries({ content_type: "project" }));
+  return  <ProjectData response={response} />
 }
 
 export default page;

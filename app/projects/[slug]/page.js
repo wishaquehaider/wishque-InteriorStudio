@@ -1,4 +1,4 @@
-import { client } from '@/lib/contentful';
+import { client } from '@/app/lib/contentful';
 import React from 'react';
 import style from '@/style/projects/projects.module.css';
 import Image from 'next/image';

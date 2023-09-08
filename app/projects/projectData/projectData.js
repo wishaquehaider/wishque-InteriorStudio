@@ -9,18 +9,18 @@ import Navbar from '@/(components)/navbar/navbar';
 // import { Link } from 'react-scroll';
 
 const ProjectData = ({ response }) => {
-
+const parsedData = JSON.parse(response)
   let routers = useRouter();
 
   let [imageStyle, setImageStyle] = useState(false);
 
 
-  let content = response.items.flatMap((item) => {
+  let content = parsedData.items.flatMap((item) => {
     return item.fields
   });
 
 
-  let ans = response.items.flatMap((item) => {
+  let ans = parsedData.items.flatMap((item) => {
     return item.fields.images[0]
   });
 
@@ -33,7 +33,7 @@ const ProjectData = ({ response }) => {
     return item.fields.file.url
   });
   
-  let contentNew = response.items.flatMap((item) => {
+  let contentNew = parsedData.items.flatMap((item) => {
     return item.fields.title
   });
 

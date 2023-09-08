@@ -46,11 +46,11 @@ function AboutHero() {
                     </p>
 
                     <p className={style.miniParagraph}>
-                        Oxford Properties Gairloch RioCan Hazelview Properties
-                        Great Gulf Lifetime Developments TAS Daniels Corporation
-                        Slate Asset Management Marlin Spring China Resources Equinox
-                        Alo Food Group Hyatt Hotels Kimpton Hotels Viceroy Hospitality
-                        Group Kemmons Wilson Innvest Hotels Valor Hospitality Partners
+                        Oxford Properties <br/> Gairloch <br/> RioCan <br/> Hazelview Properties <br/>
+                        Great Gulf <br/> Lifetime Developments <br/> TAS <br/> Daniels Corporation <br/>
+                        Slate Asset Management <br/> Marlin Spring <br/> China Resources <br/> Equinox <br/>
+                        Alo Food Group <br/> Hyatt Hotels <br/> Kimpton Hotels <br/> Viceroy Hospitality
+                        Group <br/> Kemmons Wilson <br/> Innvest Hotels <br/> Valor Hospitality Partners
                     </p>
                     <hr />
                 </div>
