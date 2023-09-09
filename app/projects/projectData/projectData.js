@@ -75,7 +75,7 @@ const parsedData = JSON.parse(response)
          <Navbar/>
       <div className={style.main}>
 
-        <h1 className={style.mainHeading}>Project</h1>
+        <h1 className={style.mainHeading}>Projects</h1>
         <div className={style.contentParent}>
           <div className={style.contentChild}>
             <p className={style.heading}>Date</p>

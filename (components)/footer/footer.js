@@ -13,7 +13,7 @@ function Footer() {
             <div className={style.footerInfo} >
                 <div className={style.contactField}>
                     <p className={style.footerHeading}>Contact Us</p>
-                    <p> Send us an Email </p>
+                    <p className={style.footerFont}> Send us an Email </p>
                     <a href='mailto:appear.interior@gmail.com'>
                         <p className={style.mail}>appear.interior@gmail.com</p>
                     </a>
@@ -21,7 +21,7 @@ function Footer() {
 
                 <div className={style.adressField}>
                     <p className={style.footerHeading}>Adress</p>
-                    <p>Sitara Institute, Kohinoor Rd, Near Mediacom Plaza, Kohinoor City Madina Town</p>
+                    <p className={style.footerFont}>Sitara Institute, Kohinoor Rd, Near Mediacom Plaza, Kohinoor City Madina Town</p>
                 </div>
             </div>
 

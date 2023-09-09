@@ -1,7 +1,9 @@
 .parentData {
     display: flex;
+    justify-content: space-between;
     column-gap: 80px;
     width: 100%;
+    padding: 0px 80px;
 }
 
 .mainHeading {
@@ -15,7 +17,7 @@
 }
 
 .parentFirstSection {
-    padding-left: 80px;
+    /* padding-left: 80px; */
 }
 
 .hrTag {

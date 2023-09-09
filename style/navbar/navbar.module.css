@@ -169,9 +169,12 @@
 }
 
 .footerHeading {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
     cursor: pointer;
+}
+
+.fontSize {
+    font-size: 15px;
 }
 
 .whatsApp {
@@ -211,7 +214,8 @@
  }
 
  .mail {
-    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
  }
 
 
@@ -285,7 +289,7 @@
 
 
 .Follow {
-    font-weight: 500;
+    font-size: 15px;
     padding-bottom: 10px;
 }
 
