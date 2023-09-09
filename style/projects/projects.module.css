@@ -86,12 +86,12 @@
 }
 
 .heading {
-    font-size: 13px;
+    font-size: 15px;
     /* opacity: 0.70; */
 }
 
 .headingMain {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .navIconCross {
@@ -235,7 +235,7 @@
 
 .mainHeading {
    padding: 100px 0 20px 0;
-   font-size: 40px;
+   font-size: 44px;
    font-weight: 300;
 }
 
