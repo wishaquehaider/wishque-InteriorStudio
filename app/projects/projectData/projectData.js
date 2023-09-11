@@ -13,6 +13,8 @@ const parsedData = JSON.parse(response)
   let routers = useRouter();
 
   let [imageStyle, setImageStyle] = useState(false);
+  const [prevHoveredImage, setPrevHoveredImage] = useState(null);
+
 
 
   let content = parsedData.items.flatMap((item) => {
@@ -49,9 +51,10 @@ const parsedData = JSON.parse(response)
 
   const handleMouseEnter = (index) => {
     const targetElement = document.getElementById(`${index}`);
+    console.log('wishaq',targetElement);
     if (targetElement) {
-      const offsetTop = targetElement.offsetTop - 100; // Adjust the offset as needed
-      window.scrollTo({
+      const offsetTop = targetElement.offsetTop - 100; 
+      window.scrollTo({ 
         top: offsetTop,
         behavior: 'smooth',
       });
@@ -61,19 +64,38 @@ const parsedData = JSON.parse(response)
   const handleMouseLeave = (index) => {
     const targetElementSecond = document.getElementById(`${index}`);
     if (targetElementSecond) {
-      // targetElementSecond.previousElementSibling.style.opacity = 100
-      // targetElementSecond.nextElementSibling.style.opacity = 100
     }
-    // const offsetTop = targetElement.offsetTop - 100; // Adjust the offset as needed
     setImageStyle(false);
   };
 
 
+  const onMouseEnterPicture = (index) => {
+    const targetElementNext = document.getElementById(`${index}`);
+    
+    if (targetElementNext) {
+
+      if (prevHoveredImage) {
+        prevHoveredImage.style.opacity = '0.50';
+        prevHoveredImage.style.opacity = '0.50';
+      }
+
+      targetElementNext.style.opacity = '100'
+      
+      const offsetTopss = targetElementNext.offsetTop - 50;
+      targetElementNext.scrollIntoView({
+        top: offsetTopss,
+        behavior: 'smooth',
+        block: 'center'
+      });
+      setPrevHoveredImage(targetElementNext);
+    }
+  };
+  
   return (
     <>
     <div className={style.mainParent}>
          <Navbar/>
-      <div className={style.main}>
+      <div className={ style.main}>
 
         <h1 className={style.mainHeading}>Projects</h1>
         <div className={style.contentParent}>
@@ -96,8 +118,8 @@ const parsedData = JSON.parse(response)
                 <div
                   onMouseEnter={() => handleMouseEnter(i)}
                   onMouseLeave={() => handleMouseLeave(i)}
-
                   className={style.contentParentApiData}
+                  id={`${route}`}
                 >
                   <div className={style.contentChild}>
                     <p className={style.heading}>{item.year}</p>
@@ -122,8 +144,7 @@ const parsedData = JSON.parse(response)
             let route = item.title.replaceAll(' ', '-').toLowerCase();
             return <>
               <Link href={`projects/${route}`}>
-
-              <div id={`${i}`} className={imageStyle ? style.imageParentScroll : style.imgParent}>
+              <div onMouseEnter={() => onMouseEnterPicture(route)}   id={`${i}`} className={imageStyle ? style.imageParentScroll : style.imgParent}>
                 <Image alt={item.file.url} className={style.myImg} src={'https:' + item.file.url} fill={true} />
               </div>
 

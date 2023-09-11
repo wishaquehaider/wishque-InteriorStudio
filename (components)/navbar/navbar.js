@@ -63,7 +63,7 @@ function Navbar({ inHome }) {
 
             <div className={style.adressField}>
               <p className={style.footerHeading}>Adress</p>
-              <p className={style.fontSize}>Sitara Institute, Kohinoor Rd, Near Mediacom Plaza, Kohinoor City Madina Town</p>
+            <Link target={'_blank'} href={'https://www.google.com/maps/place/Appears+interior+studio/@31.4149604,73.1096488,16z/data=!4m6!3m5!1s0x39226942ceaf7515:0x2fe0993749530320!8m2!3d31.4138159!4d73.1134039!16s%2Fg%2F11mtdcfcnk?entry=ttu'} > <p className={style.fontSize}>Sitara Institute, Kohinoor Rd, Near Mediacom Plaza, Kohinoor City Madina Town</p> </Link> 
             </div>
           </div>
 
